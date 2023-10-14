@@ -1,0 +1,2 @@
+# sehriyo
+static components
