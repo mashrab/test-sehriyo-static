@@ -1,0 +1,160 @@
+doctype html
+html
+    include _head.pug
+    title Main
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +card('')                
+
+            .flex.justify-center.flex-col.items-center.gap-4
+                h2(class="font-semibold text-3xl") Вы не сдали тест!
+
+                +icon-failure
+
+            div(class="grid grid-cols-3 gap-4")
+                +description-list('Правильные ответы', '17')
+                +description-list('Неправильные ответы', '3')
+                +description-list('Всего вопросов', '20')
+                +description-list('Затраченное время', '22 минут')
+                +description-list('Время на тест', '30 минут')
+                +description-list('Место в классе', '19')
+                +description-list('Место по всей школе', '187')
+                +description-list('Набранные баллы из 289', '135')
+                +description-list('Процент освоения из 100%', '76%')
+
+            h3(class="font-semibold text-lg") Подробный отчет по тесту
+
+            table(class='w-full')
+                thead(class='bg-gray-100')
+                    tr
+                        th(class="border font-semibold p-4 text-left") №
+                        th(class="border font-semibold p-4 text-left") Правильный ответ
+                        th(class="border font-semibold p-4 text-left") Ваш ответ
+                tbody
+                    tr
+                        td(class="border p-4") 1
+                        td(class="border p-4") Каменный век
+                        td(class="border p-4 text-red-500") Древнее время
+                    tr
+                        td(class="border p-4") 2
+                        td(class="border p-4") Вариант А
+                        td(class="border p-4 text-red-500") Вариант А
+                    tr
+                        td(class="border p-4") 3
+                        td(class="border p-4") Узбекистан, Япония, Казахстан
+                        td(class="border p-4 text-emerald-500") Египт, Узбекистан, Казахстан
+
+
+            +button-secondary('Вернуться к другим тестам')
+
+        +card('')                
+
+            .flex.justify-center.flex-col.items-center.gap-4
+                h2(class="font-semibold text-3xl") Вы успешно сдали тест!
+
+                +icon-success
+
+            div(class="grid grid-cols-3 gap-4")
+                +description-list('Правильные ответы', '17')
+                +description-list('Неправильные ответы', '3')
+                +description-list('Всего вопросов', '20')
+                +description-list('Затраченное время', '22 минут')
+                +description-list('Время на тест', '30 минут')
+                +description-list('Место в классе', '19')
+                +description-list('Место по всей школе', '187')
+                +description-list('Набранные баллы из 289', '135')
+                +description-list('Процент освоения из 100%', '76%')
+
+            h3(class="font-semibold text-lg") Подробный отчет по тесту
+
+            table(class='w-full')
+                thead(class='bg-gray-100')
+                    tr
+                        th(class="border font-semibold p-4 text-left") №
+                        th(class="border font-semibold p-4 text-left") Правильный ответ
+                        th(class="border font-semibold p-4 text-left") Ваш ответ
+                tbody
+                    tr
+                        td(class="border p-4") 1
+                        td(class="border p-4") Каменный век
+                        td(class="border p-4 text-red-500") Древнее время
+                    tr
+                        td(class="border p-4") 2
+                        td(class="border p-4") Вариант А
+                        td(class="border p-4 text-red-500") Вариант А
+                    tr
+                        td(class="border p-4") 3
+                        td(class="border p-4") Узбекистан, Япония, Казахстан
+                        td(class="border p-4 text-emerald-500") Египт, Узбекистан, Казахстан
+
+
+            +button-secondary('Вернуться к другим тестам')
+
+        +card('')                
+
+            h2(class="font-semibold text-3xl") Вопросы о исторических событиях, личностях и эпохах
+
+            div(class="") Они направлены на проверку знаний учащихся о важных событиях, влиятельных личностях и исторических периодах, что позволяет оценить их понимание и интерес к истории.
+
+            div(class="grid grid-cols-2 gap-4")
+                +description-list('Автор теста', 'Анна Дмитриевна Васильева')
+                +description-list('Тип теста', 'Олимпиадный')
+                +description-list('Время на тест', '30 минут')
+                +description-list('Вопросы', '20')
+                +description-list('Предмет', 'Информатика и программирование')
+                +description-list('Классы', '7, 8')
+
+            +button-primary('Начать тест', 'w-full')
+
+        h3(class="font-semibold text-lg") Какая эпоха была характеризована переходом от охоты и собирательства к земледелию и появлению первых поселений?
+
+        .flex.max-w-lg.justify-center.mx-auto
+            img(src="content/ImageQuestion.jpg", alt="" class="rounded-2xl")
+
+        +answer-one Древнее время
+        +answer-one Каменный век
+        +answer-one Средние века
+        +answer-one Эпоха Возрождения
+
+        h3(class="font-semibold text-lg") Каким образом ледники оказывают влияние на формирование фьордов?
+
+        textarea(class="block w-full rounded-2xl border border-gray-200 p-4 shadow-sm placeholder:text-gray-400" placeholder="Введите ваш ответ" rows="5" cols="30")
+
+        h3(class="font-semibold text-lg") На какой из представленных фотографий изображена дельта реки?
+
+        div(class="grid grid-cols-2 gap-4")
+            +answer-multiple-image
+            +answer-multiple-image
+            +answer-multiple-image
+            +answer-multiple-image
+
+        h3(class="font-semibold text-lg") Укажите страны, которые находятся в Азии?
+
+        +answer-multiple Узбекистан
+        +answer-multiple
+        +answer-multiple
+
+        h3(class="font-semibold text-lg") Какая эпоха была характеризована переходом от охоты и собирательства к земледелию и появлению первых поселений?
+
+        +answer-one Древнее время
+        +answer-one Каменный век
+        +answer-one Средние века
+        +answer-one Эпоха Возрождения
+      
+
+
+
+
+
+
+        +test-nav
+
+
+    //- page content end
+
+    include _footer.pug

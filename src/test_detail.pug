@@ -1,0 +1,30 @@
+doctype html
+html
+    include _head.pug
+    title Main
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +card('')                
+
+            h2(class="font-semibold text-3xl") Вопросы о исторических событиях, личностях и эпохах
+
+            div(class="") Они направлены на проверку знаний учащихся о важных событиях, влиятельных личностях и исторических периодах, что позволяет оценить их понимание и интерес к истории.
+
+            div(class="grid grid-cols-2 gap-4")
+                +description-list('Автор теста', 'Анна Дмитриевна Васильева')
+                +description-list('Тип теста', 'Олимпиадный')
+                +description-list('Время на тест', '30 минут')
+                +description-list('Вопросы', '20')
+                +description-list('Предмет', 'Информатика и программирование')
+                +description-list('Классы', '7, 8')
+
+            +button-primary('Начать тест', 'w-full')
+
+    //- page content end
+
+    include _footer.pug

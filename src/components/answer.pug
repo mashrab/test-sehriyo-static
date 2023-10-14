@@ -1,0 +1,19 @@
+mixin answer-multiple
+    label(class="border p-4 shadow-sm rounded-2xl bg-white flex gap-4 items-center cursor-pointer" for="answerMultiple")
+        input(id="answerMultiple" name="" type="checkbox" class="")
+        if block
+            block
+        else 
+            span Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem, aperiam ut optio nesciunt sequi dolorem eum blanditiis?
+
+mixin answer-one
+    label(class="border p-4 shadow-sm rounded-2xl bg-white flex gap-4 items-center cursor-pointer" for="answerOne")
+        input(id="answerOne" name="answerOne" type="radio" class="")
+        span
+            block
+
+mixin answer-multiple-image
+    label(class="border p-4 shadow-sm rounded-2xl bg-white flex gap-4 flex-col items-center cursor-pointer" for="answerMultipleImage")
+        img(src="content/ImageQuestion.jpg" class="rounded")
+        input(id="answerMultipleImage" name="answerOne" type="radio" class="")
+        span Вариант А

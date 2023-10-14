@@ -1,0 +1,41 @@
+mixin card(classes)
+    div(class="border p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto " + classes)
+        block
+
+mixin book-card
+    .rounded-2xl.overflow-hidden.bg-white.h-full
+        img(src='content/book_cover.jpg' alt='')
+        .p-4.space-y-4
+            div
+                h4.font-semibold Богатый папа, бедный папа!
+                div Роберт Кийосаки
+                div(class="text-gray-400") Нон-фикшн
+            +badge-success
+            +badge-warning
+            +badge-danger
+            
+            +button-secondary('Посмотреть баллы')
+            +button-primary('Начать читать')
+            +button-primary('Продолжить')
+
+mixin test-card
+    +card('!p-5')
+            +badge('Математика')
+
+            h3(class="font-semibold") Задания на проверку знаний и навыков в математических операциях и решении задач.
+
+            +description-list('Название книги', 'Богатый папа, бедный папа')
+            +description-list('Название раздела', 'Мой первый банк')
+
+            .flex.gap-4
+                +description-list('Процент', '100%')
+                +description-list('Баллы', '271')
+                +description-list('Оценка', '5')
+            +progress-bar
+
+            .grid.grid-cols-2.gap-4
+                +description-list('Сдавать до', '11 декабря 2023')
+                +description-list('Дата сдачи', '11 декабря 2023')
+
+            +button-primary('Начинать тест')
+            +button-secondary('Посмотреть результаты')

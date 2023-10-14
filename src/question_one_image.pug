@@ -1,0 +1,25 @@
+doctype html
+html
+    include _head.pug
+    title Main
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        h3(class="font-semibold text-lg") На какой из представленных фотографий изображена дельта реки?
+
+        div(class="grid grid-cols-2 gap-4")
+            +answer-multiple-image
+            +answer-multiple-image
+            +answer-multiple-image
+            +answer-multiple-image
+ 
+        +test-nav
+
+
+    //- page content end
+
+    include _footer.pug
