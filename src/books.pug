@@ -1,3 +1,47 @@
-include _head.pug
+doctype html
+html
+    include _head.pug
+    title Main
+body(class="bg-gray-100 pb-20")
+    include _header.pug
 
-h1 books!
+    //- page content start
+
+    +main('')
+
+        h2(class="text-4xl") Книги
+
+        .flex.items-center.justify-between
+            .flex.items-center.gap-2
+
+                +button-primary('Все')
+                +button-secondary('Сейчас читаете')
+                +button-secondary('Остановили')
+                +button-secondary('Прочитали')
+
+            .flex.items-center.gap-2
+                select.block.rounded-lg.border-gray-200(name='' id='')
+                    option(value='0') Выбрите класс
+                    option(value='9') 9 «А»
+                    option(value='10') 10 «А»
+                    option(value='11' selected='') 11 «А»
+                select.block.rounded-lg.border-gray-200(name='' id='')
+                    option(value='0') Выбрите четверть
+                    option(value='1') Четверть I
+                    option(value='2' selected='') Четверть II
+                    option(value='3') Четверть III
+                    option(value='4') Четверть IV
+
+        h3(class="text-2xl") Список рекомендуемых книг для чтения во второй четверти
+
+        div(class="grid grid-cols-4 gap-5")
+
+            +book-card
+            +book-card
+            +book-card
+            +book-card
+            +book-card
+
+    //- page content end
+
+    include _footer.pug
