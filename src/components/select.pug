@@ -1,0 +1,6 @@
+mixin select(options = ['Select', 'Option 1', 'Option 2', 'Option 3'])
+    select(class="rounded-lg border-gray-300 shadow-sm")
+        each option in options
+            option= option
+
+//- +select(['Apple', 'Banana', 'Cherry'])

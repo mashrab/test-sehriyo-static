@@ -1,2 +1,2 @@
-# sehriyo
-static components
+# Project Name
+Some useful help text goes here

@@ -1,0 +1,35 @@
+doctype html
+html
+    include _head.pug
+    title Login
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +card('max-w-md')
+    
+            +h3('Войти', 'text-center')
+
+            div(class="space-y-2")
+                +label('Номер телефона')
+                +input('', 'w-full')
+
+            div(class="space-y-2")
+                +label('Пароль')
+                +input('', 'w-full')
+            
+            +button-primary('Войти')
+
+            div(class="text-center")
+                a(href="") Забыли пароль? 
+                
+
+
+
+
+    //- page content end
+
+    include _footer.pug

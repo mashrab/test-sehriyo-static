@@ -3,3 +3,6 @@ mixin button-primary(label, classes)
 
 mixin button-secondary(label, classes)
     a(class="flex justify-center items-center gap-2 text-blue-800 py-2 px-3 rounded-lg border border-blue-800 " + classes, href="#")= label
+
+mixin button-light(label, classes)
+    a(class="inline-flex justify-center items-center py-2 px-3 rounded-lg bg-gray-100 " + classes, href="#")= label

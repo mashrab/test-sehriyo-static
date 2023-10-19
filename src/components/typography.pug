@@ -1,0 +1,23 @@
+mixin h1(title="Heading 1")
+  h1(class="font-semibold text-4xl")= title
+
+mixin h2(title="Heading 2")
+  h2(class="font-semibold text-3xl")= title
+
+mixin h3(title="Heading 3", classes='')
+  h3(class="font-semibold text-2xl " + classes)= title
+
+mixin h4(title="Heading 4")
+  h4(class="font-semibold text-xl")= title
+
+mixin h5(title="Heading 5")
+  h5(class="font-semibold text-lg")= title
+
+mixin h6(title="Heading 6")
+  h6(class="font-semibold")= title
+
+mixin small(title="Small")
+  div(class="text-sm")= title
+
+mixin xsmall(title="X Small")
+  div(class="text-xs")= title

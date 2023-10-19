@@ -1,0 +1,29 @@
+doctype html
+html
+    include _head.pug
+    title Forgot Password
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +card('max-w-md')
+
+            div(class="flex justify-center")
+
+                +icon-success-xl
+    
+            +h3('Ваше сообщение отправлено!', 'text-center')
+            
+            +button-secondary('Вернуться на страницу входа')
+            
+            
+
+
+
+
+    //- page content end
+
+    include _footer.pug

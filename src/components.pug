@@ -9,31 +9,18 @@ body(class="bg-gray-100 pb-20")
 
     +main('')
 
-        +card('')                
+        +card('')
 
-            mixin select(options = ['Select', 'Option 1', 'Option 2', 'Option 3'])
-                select(class="rounded-lg border-gray-300 shadow-sm")
-                    each option in options
-                        option= option
+            +h1('Page title goes here')
+            +h2
+            +h3
+            +h4
+            +h5
+            +h6
+            +small
+            +xsmall
 
-            +select(['Apple', 'Banana', 'Cherry'])
-            +select
-
-            mixin input(placeholder="Input")
-                input(type="text" class="rounded-lg border-gray-300 shadow-sm" placeholder=placeholder)
-
-            +input
-
-            mixin radio
-                div
-                    label(class="inline-flex items-center")
-                        input(type="radio")
-                        span(class="ml-2")
-                            block
-            
-            +radio Hello world!
-            +radio Hello world!
-            +radio Hello world!
+            +checkbox
 
 
         +card('')                

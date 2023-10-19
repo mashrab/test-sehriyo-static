@@ -1,0 +1,38 @@
+doctype html
+html
+    include _head.pug
+    title Profile
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +card('max-w-md')
+    
+            +h3('Сабина Алиева', 'text-center')
+            
+            div(class="flex justify-center")
+                +avatar-xl
+
+            div(class="flex justify-center")
+                +avatar-xl-img
+
+            div(class="flex justify-center")
+                +button-light('Изменить')
+
+            +description-list('Класс', '9 «А»')
+            +description-list('Телефон', '+998 90 135-79-19')
+            +description-list('E-mail', 'sabina2010@gmail.com')
+            +description-list('Дата рождения', '29 сентября 2010')
+
+            div(class="flex justify-center")
+                +button-secondary('Выйти')
+
+
+
+
+    //- page content end
+
+    include _footer.pug
