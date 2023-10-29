@@ -17,6 +17,7 @@ body(class="bg-gray-100 pb-20")
 
                     +button-secondary('Скачать', 'w-full')
                     +button-secondary('Читать онлайн', 'w-full')
+                    +button-secondary('Добавить отзыв', 'w-full')
                 
                 .space-y-5
                         h1.text-4xl Богатый папа, бедный папа!
@@ -96,6 +97,7 @@ body(class="bg-gray-100 pb-20")
                 .flex.flex-col.gap-4
                     +description-list('Период начала', '20.09.2023')
                     +description-list('Период окончания', '22.09.2023')
+                    +description-list('Затраченное время', '3 дня, 15 часов, 19 минут')
                 .flex.flex-col.gap-4
                     +description-list('Начало', '—')
                     +description-list('Окончание', '—')
@@ -113,6 +115,7 @@ body(class="bg-gray-100 pb-20")
                 .flex.flex-col.gap-4
                     +description-list('Период начала', '20.09.2023')
                     +description-list('Период окончания', '22.09.2023')
+                    +description-list('Затраченное время', '3 дня, 15 часов, 19 минут')
                 .flex.flex-col.gap-4
                     +description-list('Начало', '13.09.2023')
                     +description-list('Окончание', '—')
@@ -132,6 +135,7 @@ body(class="bg-gray-100 pb-20")
                 .flex.flex-col.gap-4
                     +description-list('Период начала', '20.09.2023')
                     +description-list('Период окончания', '22.09.2023')
+                    +description-list('Затраченное время', '3 дня, 15 часов, 19 минут')
                 .flex.flex-col.gap-4
                     +description-list('Начало', '13.09.2023')
                     +description-list('Окончание', '—')
@@ -151,6 +155,7 @@ body(class="bg-gray-100 pb-20")
                 .flex.flex-col.gap-4
                     +description-list('Период начала', '20.09.2023')
                     +description-list('Период окончания', '22.09.2023')
+                    +description-list('Затраченное время', '3 дня, 15 часов, 19 минут')
                 .flex.flex-col.gap-4
                     +description-list('Начало', '13.09.2023')
                     +description-list('Окончание', '15.10.2023')
@@ -162,6 +167,45 @@ body(class="bg-gray-100 pb-20")
 
                     +progress-bar-success
 
+        +h3('Добавьте ваш отзыв к книге')
+
+        +card('')
+
+            +textarea('Напишите ваш отзыв')
+
+            +button-primary('Отправить', '')
+
+        +card
+            +h3('Отзывы · 3')
+
+            
+            div.flex.justify-between.gap-10
+                
+                div Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
+                div(class="whitespace-nowrap text-right")
+                    div(class="w-56") Сабина А.
+                    div.text-gray-400 20 ноября 2023
+                    div
+                        a(href="", class="text-blue-800") Удалить
+
+            div.flex.justify-between.gap-10
+                div У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
+                div(class="whitespace-nowrap text-right")
+                    div(class="w-56") Константинопольский К.
+                    div.text-gray-400 20 ноября 2023
+
+            div.flex.justify-between.gap-10
+                div Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
+                div(class="whitespace-nowrap text-right")
+                    div(class="w-56") Азизов У.
+                    div.text-gray-400 20 ноября 2023
+
+            
+
+        +card
+            +h3('Поделитесь своим мнением первыми - оставьте отзыв!')
+
+            div Отзывы могут помочь другим читателям оценить ценность и качество книги. 
         
 
     //- page content end

@@ -23,7 +23,7 @@ body(class="bg-gray-100 pb-20")
                 +description-list('Затраченное время', '22 минут')
                 +description-list('Время на тест', '30 минут')
                 +description-list('Место в классе', '19')
-                +description-list('Место по всей школе', '187')
+                +description-list('Место по параллелям', '187')
                 +description-list('Набранные баллы из 289', '135')
                 +description-list('Процент освоения из 100%', '76%')
 
@@ -35,22 +35,30 @@ body(class="bg-gray-100 pb-20")
                         th(class="border font-semibold p-4 text-left") №
                         th(class="border font-semibold p-4 text-left") Правильный ответ
                         th(class="border font-semibold p-4 text-left") Ваш ответ
+                        th(class="border font-semibold p-4 text-left") Время
                 tbody
                     tr
                         td(class="border p-4") 1
                         td(class="border p-4") Каменный век
                         td(class="border p-4 text-red-500") Древнее время
+                        td(class="border p-4") 00:05
                     tr
                         td(class="border p-4") 2
                         td(class="border p-4") Вариант А
                         td(class="border p-4 text-red-500") Вариант А
+                        td(class="border p-4") 00:13
                     tr
                         td(class="border p-4") 3
                         td(class="border p-4") Узбекистан, Япония, Казахстан
                         td(class="border p-4 text-emerald-500") Египт, Узбекистан, Казахстан
+                        td(class="border p-4") 01:57
 
 
             +button-secondary('Вернуться к другим тестам')
+
+        +h3('Ваше место по итогам теста')
+
+        include _test_results_table.pug
 
 
     //- page content end

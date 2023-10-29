@@ -1,0 +1,58 @@
+doctype html
+html
+    include _head.pug
+    title Suggestions
+body(class="bg-gray-100 pb-20")
+    include _header.pug
+
+    //- page content start
+
+    +main('')
+
+        +h1('Мои предложения')
+
+        +card('')
+            +h3('Добавление нового предложения')
+
+            +textarea('Напишите ваше предложение')
+
+            +button-primary('Отправить', '')
+
+        +card
+            +h3('Ваши предложения')
+
+            
+            div.flex.justify-between.gap-10
+                div Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
+                div(class="whitespace-nowrap text-right")
+                    div.text-gray-400 20 ноября 2023
+                    div
+                        a(href="", class="text-blue-800") Удалить
+
+            div.flex.justify-between.gap-10
+                div У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
+                div(class="whitespace-nowrap text-right")
+                    div.text-gray-400 20 ноября 2023
+                    div
+                        a(href="", class="text-blue-800") Удалить
+
+            div.flex.justify-between.gap-10
+                div Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
+                div(class="whitespace-nowrap text-right")
+                    div.text-gray-400 20 ноября 2023
+                    div
+                        a(href="", class="text-blue-800") Удалить
+
+            
+
+        +card
+            +h3('Вы пока не предложили ни одной книги')
+
+            div Предложите книгу для добавления в школьную библиотеку и сделайте свой вклад в совместное развитие.
+
+
+        
+
+    //- page content end
+
+    include _footer.pug
