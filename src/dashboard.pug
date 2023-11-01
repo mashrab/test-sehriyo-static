@@ -17,7 +17,7 @@ body(class="bg-gray-100 pb-20")
             +test-card
             +test-card
             +test-card
-            +test-card
+            +test-card('Богатый папа, бедный папа')
 
         +h4('Архив тестов') 
 
@@ -43,11 +43,6 @@ body(class="bg-gray-100 pb-20")
                 +button-secondary('Прочитали')
 
             .flex.items-center.gap-2
-                select.block.rounded-lg.border-gray-200(name='' id='')
-                    option(value='0') Выбрите класс
-                    option(value='9') 9 «А»
-                    option(value='10') 10 «А»
-                    option(value='11' selected='') 11 «А»
                 select.block.rounded-lg.border-gray-200(name='' id='')
                     option(value='0') Выбрите четверть
                     option(value='1') Четверть I

@@ -18,9 +18,9 @@ mixin book-card
             +button-primary('Начать читать')
             +button-primary('Продолжить')
 
-mixin test-card
+mixin test-card(subject="Математика")
     +card('!p-5')
-            +badge('Математика')
+            +badge(subject)
 
             h3(class="font-semibold") Задания на проверку знаний и навыков в математических операциях и решении задач.
 
