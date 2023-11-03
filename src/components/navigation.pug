@@ -6,3 +6,9 @@ mixin test-nav
             =" "
             span / 13
         +button-primary("Вперед")
+
+mixin test-nav-timeout
+    div(class="fixed p-5 right-0 bottom-0 left-0 flex justify-between items-center border-t bg-rose-600 text-white")
+        
+        div(class="text-white font-semibold") Ваше время закончилось
+        +button-primary("Посмотреть результаты")
