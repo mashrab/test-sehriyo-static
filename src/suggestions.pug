@@ -2,7 +2,7 @@ doctype html
 html
     include _head.pug
     title Suggestions
-body(class="bg-gray-100 pb-20")
+body(class="bg-gray-100 pb-40")
     include _header.pug
 
     //- page content start
@@ -22,23 +22,23 @@ body(class="bg-gray-100 pb-20")
             +h3('Ваши предложения')
 
             
-            div.flex.justify-between.gap-10
-                div Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
-                div(class="whitespace-nowrap text-right")
+            div(class="grid grid-cols-1 lg:grid-cols-4 gap-2")
+                div(class="col-span-3") Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
+                div(class="lg:text-right")
                     div.text-gray-400 20 ноября 2023
                     div
                         a(href="", class="text-blue-800") Удалить
 
-            div.flex.justify-between.gap-10
-                div У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
-                div(class="whitespace-nowrap text-right")
+            div(class="grid grid-cols-1 lg:grid-cols-4 gap-2")
+                div(class="col-span-3") У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
+                div(class="lg:text-right")
                     div.text-gray-400 20 ноября 2023
                     div
                         a(href="", class="text-blue-800") Удалить
 
-            div.flex.justify-between.gap-10
-                div Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
-                div(class="whitespace-nowrap text-right")
+            div(class="grid grid-cols-1 lg:grid-cols-4 gap-2")
+                div(class="col-span-3") Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
+                div(class="lg:text-right")
                     div.text-gray-400 20 ноября 2023
                     div
                         a(href="", class="text-blue-800") Удалить

@@ -2,12 +2,12 @@ doctype html
 html
     include _head.pug
     title Rating
-body(class="bg-gray-100 pb-20")
+body(class="bg-gray-100 pb-40")
     include _header.pug
 
     //- page content start
 
-    +main('')
+    +main("min-w-[1280px]")
 
         div
             a(href="", class="text-blue-800") Назад

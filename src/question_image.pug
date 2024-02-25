@@ -2,14 +2,14 @@ doctype html
 html
     include _head.pug
     title Main
-body(class="bg-gray-100 pb-20")
+body(class="bg-gray-100 pb-40")
     include _header.pug
 
     //- page content start
 
     +main('')
 
-        h3(class="font-semibold text-lg") Какая эпоха была характеризована переходом от охоты и собирательства к земледелию и появлению первых поселений?
+        +h3("Какая эпоха была характеризована переходом от охоты и собирательства к земледелию и появлению первых поселений?") 
 
         .flex.max-w-lg.justify-center.mx-auto
             img(src="content/ImageQuestion.jpg", alt="" class="rounded-2xl")

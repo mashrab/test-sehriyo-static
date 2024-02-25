@@ -2,14 +2,14 @@ doctype html
 html
     include _head.pug
     title Main
-body(class="bg-gray-100 pb-20")
+body(class="bg-gray-100 pb-40")
     include _header.pug
 
     //- page content start
 
     +main('')
 
-        h3(class="font-semibold text-lg") Укажите страны, которые находятся в Азии?
+        +h3("Укажите страны, которые находятся в Азии?")
 
         +answer-multiple Узбекистан
         +answer-multiple

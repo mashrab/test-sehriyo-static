@@ -1,38 +1,37 @@
 mixin test-nav 
-    div(class="fixed p-5 right-0 bottom-0 left-0 bg-white flex justify-between items-center border-t")
-        +button-secondary('Назад')
-        
-        div(class="flex gap-2")
-            div(class="text-gray-500")
-                span.font-semibold.text-black Вопрос 9
-                =" "
-                span / 99
-            div &middot;
-            div() Время вопроса: 01:35
-            div &middot;
-            div() Общее время теста: 28:15
-        
-        +button-primary("Вперед")
+    div(class="fixed p-4 right-0 bottom-0 left-0 bg-white border-t")
+
+        div(class="grid grid-cols-2 lg:grid-cols-5 gap-4 items-center")
+
+            div(class="")
+                +button-secondary('Назад') 1
+            
+            div(class="order-first col-span-full flex justify-between lg:order-none lg:col-span-3 text-center lg:justify-center lg:gap-4")
+                +description-list("Вопрос:", "9 / 99")
+                +description-list("Время вопроса:", "01:35")
+                +description-list("Время теста:", "28:15")  
+            
+            div(class="")
+                +button-primary("Вперед")
 
 mixin test-nav-timeout
-    div(class="fixed p-5 right-0 bottom-0 left-0 bg-rose-100 border-rose-300 flex justify-between items-center border-t")
+    div(class="fixed p-4 right-0 bottom-0 left-0 bg-rose-100 border-rose-300 border-t")
 
-        +button-secondary('Назад')
-
-        div(class="flex flex-col items-center")
         
-            div(class="text-rose-600 font-semibold") Время вопроса/теста закончилось
+
+        div(class="grid grid-cols-2 lg:grid-cols-5 gap-4 items-center")
+
+            div(class="")
+                +button-secondary('Назад') 1
             
-            div(class="flex gap-2")
-                div(class="")
-                    span(class="font-semibold") Вопрос 9
-                    =" "
-                    span / 99
-                div &middot;
-                div() Время вопроса: 01:35
-                div &middot;
-                div() Общее время теста: 28:15
+            div(class="order-first col-span-full flex flex-wrap justify-between gap-y-2 lg:order-none lg:col-span-3 text-center lg:justify-center lg:gap-x-4")
+                div(class="text-rose-600 font-semibold text-center w-full") Время вопроса/теста закончилось
+                +description-list("Вопрос:", "9 / 99")
+                +description-list("Время вопроса:", "01:35")
+                +description-list("Время теста:", "28:15")  
+            
+            div(class="")
+                +button-primary("Вперед")
 
         
-        
-        +button-primary("Результаты / Вперед")
+    
