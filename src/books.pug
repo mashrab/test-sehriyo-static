@@ -2,7 +2,7 @@ doctype html
 html
     include _head.pug
     title Main
-body(class="bg-gray-100 pb-20")
+body(class="bg-gray-100 pb-40")
     include _header.pug
 
     //- page content start
@@ -11,15 +11,15 @@ body(class="bg-gray-100 pb-20")
 
         h2(class="text-4xl") Книги
 
-        .flex.items-center.justify-between
-            .flex.items-center.gap-2
+        div(class="flex items-center justify-between flex-wrap gap-2")
+            div(class="flex items-center gap-2 flex-wrap")
 
                 +button-primary('Все')
                 +button-secondary('Сейчас читаете')
                 +button-secondary('Остановили')
                 +button-secondary('Прочитали')
 
-            .flex.items-center.gap-2
+            div(class="flex items-center gap-2 flex-wrap")
                 select.block.rounded-lg.border-gray-200(name='' id='')
                     option(value='0') Выбрите класс
                     option(value='9') 9 «А»
@@ -34,7 +34,7 @@ body(class="bg-gray-100 pb-20")
 
         h3(class="text-2xl") Список рекомендуемых книг для чтения во второй четверти
 
-        div(class="grid grid-cols-4 gap-5")
+        div(class="grid grid-cols-1 gap-5 lg:grid-cols-4")
 
             +book-card
             +book-card

@@ -7,7 +7,7 @@
   </head>
   <title>Main</title>
 </html>
-<body class="bg-gray-100 pb-20">
+<body class="bg-gray-100 pb-40">
   <header class="flex items-center justify-between p-4 bg-white shadow-md">
     <div><svg width="114" height="21" viewBox="0 0 114 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.67538 0.580078C9.10591 0.580078 10.3439 0.781821 11.3893 1.18531C12.453 1.58879 13.4159 2.20319 14.2779 3.0285L12.1871 5.47691C10.8849 4.41318 9.49106 3.88132 8.0055 3.88132C7.21687 3.88132 6.59331 4.04638 6.1348 4.3765C5.67629 4.68829 5.44704 5.14679 5.44704 5.75202C5.44704 6.17384 5.54791 6.52231 5.74966 6.79741C5.9514 7.05417 6.30903 7.30176 6.82256 7.54019C7.33608 7.77861 8.10637 8.06288 9.13342 8.39301C11.0775 9.01657 12.508 9.78686 13.425 10.7039C14.342 11.6025 14.8005 12.8864 14.8005 14.5553C14.8005 15.7474 14.4979 16.802 13.8927 17.719C13.2875 18.6177 12.4163 19.3238 11.2792 19.8373C10.1421 20.3325 8.79413 20.5801 7.23521 20.5801C5.67629 20.5801 4.29161 20.3325 3.08116 19.8373C1.88904 19.3421 0.86199 18.6819 0 17.8566L2.28336 15.3531C3.01696 15.9767 3.76891 16.4444 4.5392 16.7561C5.32783 17.0679 6.18065 17.2238 7.09766 17.2238C8.03301 17.2238 8.76662 17.0221 9.29849 16.6186C9.84869 16.1968 10.1238 15.619 10.1238 14.8854C10.1238 14.4086 10.0229 14.0143 9.82118 13.7025C9.61944 13.3724 9.27098 13.0789 8.77579 12.8222C8.2806 12.5654 7.56534 12.2903 6.62999 11.9969C4.52086 11.355 3.01696 10.5663 2.11829 9.63097C1.23796 8.69562 0.797799 7.51268 0.797799 6.08214C0.797799 4.98173 1.09124 4.01887 1.67813 3.19356C2.26502 2.34991 3.08116 1.708 4.12655 1.26784C5.17194 0.809331 6.35488 0.580078 7.67538 0.580078Z" fill="#111111"></path>
@@ -24,10 +24,10 @@
   </header>
     <div class="mx-auto my-10 space-y-5 px-10 max-w-7xl ">
       <h2 class="text-4xl">Книги</h2>
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2"><a class="flex justify-center items-center gap-2 bg-blue-800 text-white text-center py-2 px-3 rounded-lg undefined" href="#">Все</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Сейчас читаете</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Остановили</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Прочитали</a>
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2 flex-wrap"><a class="flex justify-center items-center gap-2 bg-blue-800 text-white text-center py-2 px-3 rounded-lg undefined" href="#">Все</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Сейчас читаете</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Остановили</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 undefined" href="#">Прочитали</a>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 flex-wrap">
           <select class="block rounded-lg border-gray-200" name="" id="">
             <option value="0">Выбрите класс</option>
             <option value="9">9 «А»</option>
@@ -44,7 +44,7 @@
         </div>
       </div>
       <h3 class="text-2xl">Список рекомендуемых книг для чтения во второй четверти</h3>
-      <div class="grid grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 gap-5 lg:grid-cols-4">
           <div class="rounded-2xl overflow-hidden bg-white h-full"><img src="content/book_cover.jpg" alt="">
             <div class="p-4 space-y-4">
               <div>
