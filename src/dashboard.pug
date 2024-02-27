@@ -13,7 +13,7 @@ body(class="bg-gray-100 pb-20")
 
         +h4('Предстоящие тесты') 
 
-        .grid.grid-cols-3.gap-4
+        div(class="grid grid-cols-1 lg:grid-cols-3 gap-4")
             +test-card
             +test-card
             +test-card
@@ -21,7 +21,7 @@ body(class="bg-gray-100 pb-20")
 
         +h4('Архив тестов') 
 
-        .grid.grid-cols-3.gap-4
+        div(class="grid grid-cols-1 lg:grid-cols-3 gap-4")
             +test-card
             +test-card
             +test-card
@@ -34,15 +34,15 @@ body(class="bg-gray-100 pb-20")
 
         +h2('Книги')
 
-        .flex.items-center.justify-between
-            .flex.items-center.gap-2
+        div(class="flex items-center flex-wrap lg:justify-between gap-2")
+            div(class="flex items-center flex-wrap gap-2")
 
                 +button-primary('Все')
                 +button-secondary('Сейчас читаете')
                 +button-secondary('Остановили')
                 +button-secondary('Прочитали')
 
-            .flex.items-center.gap-2
+            div(class="flex items-center flex-wrap gap-2")
                 select.block.rounded-lg.border-gray-200(name='' id='')
                     option(value='0') Выбрите четверть
                     option(value='1') Четверть I
@@ -52,7 +52,7 @@ body(class="bg-gray-100 pb-20")
 
         +h4('Список рекомендуемых книг для чтения во второй четверти')
 
-        div(class="grid grid-cols-4 gap-5")
+        div(class="grid grid-cols-1 lg:grid-cols-4 gap-4")
 
             +book-card
             +book-card
