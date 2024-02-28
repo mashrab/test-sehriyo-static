@@ -16,7 +16,7 @@ body(class="bg-gray-100 pb-20")
 
                 +icon-failure
 
-            div(class="grid grid-cols-3 gap-4")
+            div(class="grid grid-cols-2 lg:grid-cols-3 gap-4")
                 +description-list('Правильные ответы', '17')
                 +description-list('Неправильные ответы', '3')
                 +description-list('Всего вопросов', '20')
@@ -29,29 +29,31 @@ body(class="bg-gray-100 pb-20")
 
             h3(class="font-semibold text-lg") Подробный отчет по тесту
 
-            table(class='w-full')
-                thead(class='bg-gray-100')
-                    tr
-                        th(class="border font-semibold p-4 text-left") №
-                        th(class="border font-semibold p-4 text-left") Правильный ответ
-                        th(class="border font-semibold p-4 text-left") Ваш ответ
-                        th(class="border font-semibold p-4 text-left") Время
-                tbody
-                    tr
-                        td(class="border p-4") 1
-                        td(class="border p-4") Каменный век
-                        td(class="border p-4 text-red-500") Древнее время
-                        td(class="border p-4") 00:36
-                    tr
-                        td(class="border p-4") 2
-                        td(class="border p-4") Вариант А
-                        td(class="border p-4 text-red-500") Вариант А
-                        td(class="border p-4") 01:35
-                    tr
-                        td(class="border p-4") 3
-                        td(class="border p-4") Узбекистан, Япония, Казахстан
-                        td(class="border p-4 text-emerald-500") Египт, Узбекистан, Казахстан
-                        td(class="border p-4") 00:07
+            div(class="overflow-auto")
+
+                table(class='w-full')
+                    thead(class='bg-gray-100')
+                        tr
+                            th(class="border font-semibold p-4 text-left") №
+                            th(class="border font-semibold p-4 text-left") Правильный ответ
+                            th(class="border font-semibold p-4 text-left") Ваш ответ
+                            th(class="border font-semibold p-4 text-left") Время
+                    tbody
+                        tr
+                            td(class="border p-4") 1
+                            td(class="border p-4") Каменный век
+                            td(class="border p-4 text-red-500") Древнее время
+                            td(class="border p-4") 00:36
+                        tr
+                            td(class="border p-4") 2
+                            td(class="border p-4") Вариант А
+                            td(class="border p-4 text-red-500") Вариант А
+                            td(class="border p-4") 01:35
+                        tr
+                            td(class="border p-4") 3
+                            td(class="border p-4") Узбекистан, Япония, Казахстан
+                            td(class="border p-4 text-emerald-500") Египт, Узбекистан, Казахстан
+                            td(class="border p-4") 00:07
 
 
             +button-secondary('Вернуться к другим тестам')

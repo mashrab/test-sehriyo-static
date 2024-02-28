@@ -1,57 +1,59 @@
 +card('')
 
-    .flex.gap-5
+    div(class="flex gap-5 flex-wrap")
         +select(['Среди одноклассников', 'По параллеям 8-х классов'])
         +button-primary('Показать')
 
-    table(class='w-full')
-        thead(class='bg-gray-100')
-            tr
-                th(class="border font-semibold p-4 text-left") Место
-                th(class="border font-semibold p-4 text-left") ФИО
-                th(class="border font-semibold p-4 text-left") Правильные ответы
-                th(class="border font-semibold p-4 text-left") Неправильные ответы
-                th(class="border font-semibold p-4 text-left") Баллы
-                th(class="border font-semibold p-4 text-left") Освоение
-                th(class="border font-semibold p-4 text-left") Время прочтения (день, час, минут)
-        tbody
-            tr
-                td(class="border p-4") 1
-                td(class="border p-4") Константинопольский К.
-                td(class="border p-4 text-green-500") 12
-                td(class="border p-4 text-red-500") 24
-                td(class="border p-4") 56
-                td(class="border p-4") 97%
-                td(class="border p-4") 2, 20, 55
-            tr
-                td(class="border p-4") 2
-                td(class="border p-4") Соатов М.
-                td(class="border p-4 text-green-500") 12
-                td(class="border p-4 text-red-500") 24
-                td(class="border p-4") 56
-                td(class="border p-4") 97%
-                td(class="border p-4") 2, 20, 55
-            tr(class="bg-amber-100")
-                td(class="border p-4") 3
-                td(class="border p-4") Алиева C.
-                td(class="border p-4 text-green-500") 12
-                td(class="border p-4 text-red-500") 24
-                td(class="border p-4") 56
-                td(class="border p-4") 97%
-                td(class="border p-4") 2, 20, 55
-            tr
-                td(class="border p-4") 4
-                td(class="border p-4") Абдукаримова А.
-                td(class="border p-4 text-green-500") 12
-                td(class="border p-4 text-red-500") 24
-                td(class="border p-4") 56
-                td(class="border p-4") 97%
-                td(class="border p-4") 2, 20, 55
-            tr
-                td(class="border p-4") 5
-                td(class="border p-4") Марков Д.
-                td(class="border p-4 text-green-500") 12
-                td(class="border p-4 text-red-500") 24
-                td(class="border p-4") 56
-                td(class="border p-4") 97%
-                td(class="border p-4") 2, 20, 55
+    div(class="overflow-auto")
+
+        table(class='w-full')
+            thead(class='bg-gray-100')
+                tr
+                    th(class="border font-semibold p-4 text-left") Место
+                    th(class="border font-semibold p-4 text-left") ФИО
+                    th(class="border font-semibold p-4 text-left") Правильные ответы
+                    th(class="border font-semibold p-4 text-left") Неправильные ответы
+                    th(class="border font-semibold p-4 text-left") Баллы
+                    th(class="border font-semibold p-4 text-left") Освоение
+                    th(class="border font-semibold p-4 text-left") Время прочтения (день, час, минут)
+            tbody
+                tr
+                    td(class="border p-4") 1
+                    td(class="border p-4") Константинопольский К.
+                    td(class="border p-4 text-green-500") 12
+                    td(class="border p-4 text-red-500") 24
+                    td(class="border p-4") 56
+                    td(class="border p-4") 97%
+                    td(class="border p-4") 2, 20, 55
+                tr
+                    td(class="border p-4") 2
+                    td(class="border p-4") Соатов М.
+                    td(class="border p-4 text-green-500") 12
+                    td(class="border p-4 text-red-500") 24
+                    td(class="border p-4") 56
+                    td(class="border p-4") 97%
+                    td(class="border p-4") 2, 20, 55
+                tr(class="bg-amber-100")
+                    td(class="border p-4") 3
+                    td(class="border p-4") Алиева C.
+                    td(class="border p-4 text-green-500") 12
+                    td(class="border p-4 text-red-500") 24
+                    td(class="border p-4") 56
+                    td(class="border p-4") 97%
+                    td(class="border p-4") 2, 20, 55
+                tr
+                    td(class="border p-4") 4
+                    td(class="border p-4") Абдукаримова А.
+                    td(class="border p-4 text-green-500") 12
+                    td(class="border p-4 text-red-500") 24
+                    td(class="border p-4") 56
+                    td(class="border p-4") 97%
+                    td(class="border p-4") 2, 20, 55
+                tr
+                    td(class="border p-4") 5
+                    td(class="border p-4") Марков Д.
+                    td(class="border p-4 text-green-500") 12
+                    td(class="border p-4 text-red-500") 24
+                    td(class="border p-4") 56
+                    td(class="border p-4") 97%
+                    td(class="border p-4") 2, 20, 55

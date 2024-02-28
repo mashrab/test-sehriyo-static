@@ -7,7 +7,7 @@ body(class="bg-gray-100 pb-40")
 
     //- page content start
 
-    +main("min-w-[1280px]")
+    +main()
 
         div
             a(href="", class="text-blue-800") Назад
@@ -17,77 +17,78 @@ body(class="bg-gray-100 pb-40")
 
         +card('')
 
-            .flex.gap-5
+            div(class="flex gap-5 flex-wrap")
                 +select(['Среди одноклассников', 'Среди 8-классинков', 'По школе'])
                 +select(['По всем предметам', 'Математика', 'История'])
                 +button-primary('Показать')
 
-
-            table(class='w-full')
-                thead(class='bg-gray-100')
-                    tr
-                        th(class="border font-semibold p-4 text-left") Место
-                        th(class="border font-semibold p-4 text-left") ФИО
-                        th(class="border font-semibold p-4 text-left") Баллы
-                tbody
-                    tr
-                        td(class="border p-4") 1
-                        td(class="border p-4") Константинопольский К.
-                        td(class="border p-4 text-green-500") 1990
-                    tr
-                        td(class="border p-4") 2
-                        td(class="border p-4") Соатов М.
-                        td(class="border p-4 text-green-500") 1573
-                    tr(class="bg-amber-100")
-                        td(class="border p-4") 3
-                        td(class="border p-4") Алиева C.
-                        td(class="border p-4 text-green-500") 1359
-                    tr
-                        td(class="border p-4") 4
-                        td(class="border p-4") Абдукаримова А.
-                        td(class="border p-4 text-green-500") 1135
-                    tr
-                        td(class="border p-4") 5
-                        td(class="border p-4") Марков Д.
-                        td(class="border p-4 text-green-500") 1039
+            div(class="overflow-auto")
+                table(class='w-full')
+                    thead(class='bg-gray-100')
+                        tr
+                            th(class="border font-semibold p-4 text-left") Место
+                            th(class="border font-semibold p-4 text-left") ФИО
+                            th(class="border font-semibold p-4 text-left") Баллы
+                    tbody
+                        tr
+                            td(class="border p-4") 1
+                            td(class="border p-4") Константинопольский К.
+                            td(class="border p-4 text-green-500") 1990
+                        tr
+                            td(class="border p-4") 2
+                            td(class="border p-4") Соатов М.
+                            td(class="border p-4 text-green-500") 1573
+                        tr(class="bg-amber-100")
+                            td(class="border p-4") 3
+                            td(class="border p-4") Алиева C.
+                            td(class="border p-4 text-green-500") 1359
+                        tr
+                            td(class="border p-4") 4
+                            td(class="border p-4") Абдукаримова А.
+                            td(class="border p-4 text-green-500") 1135
+                        tr
+                            td(class="border p-4") 5
+                            td(class="border p-4") Марков Д.
+                            td(class="border p-4 text-green-500") 1039
 
         +h1('Рейтинг по книгам')
 
         +card('')
 
-            .flex.gap-5
+            div(class="flex gap-5 flex-wrap")
                 +select(['Среди одноклассников', 'Среди 8-классинков', 'По школе'])
                 +select(['По всем книгам', 'Пес по имени мани. Бодо Шефер', 'Богатый папа, бедный папа. Роберт Кийосаки'])
                 +button-primary('Показать')
 
 
-            table(class='w-full')
-                thead(class='bg-gray-100')
-                    tr
-                        th(class="border font-semibold p-4 text-left") Место
-                        th(class="border font-semibold p-4 text-left") ФИО
-                        th(class="border font-semibold p-4 text-left") Баллы
-                tbody
-                    tr
-                        td(class="border p-4") 1
-                        td(class="border p-4") Константинопольский К.
-                        td(class="border p-4 text-green-500") 1990
-                    tr
-                        td(class="border p-4") 2
-                        td(class="border p-4") Соатов М.
-                        td(class="border p-4 text-green-500") 1573
-                    tr(class="bg-amber-100")
-                        td(class="border p-4") 3
-                        td(class="border p-4") Алиева C.
-                        td(class="border p-4 text-green-500") 1359
-                    tr
-                        td(class="border p-4") 4
-                        td(class="border p-4") Абдукаримова А.
-                        td(class="border p-4 text-green-500") 1135
-                    tr
-                        td(class="border p-4") 5
-                        td(class="border p-4") Марков Д.
-                        td(class="border p-4 text-green-500") 1039
+            div(class="overflow-auto")
+                table(class='w-full')
+                    thead(class='bg-gray-100')
+                        tr
+                            th(class="border font-semibold p-4 text-left") Место
+                            th(class="border font-semibold p-4 text-left") ФИО
+                            th(class="border font-semibold p-4 text-left") Баллы
+                    tbody
+                        tr
+                            td(class="border p-4") 1
+                            td(class="border p-4") Константинопольский К.
+                            td(class="border p-4 text-green-500") 1990
+                        tr
+                            td(class="border p-4") 2
+                            td(class="border p-4") Соатов М.
+                            td(class="border p-4 text-green-500") 1573
+                        tr(class="bg-amber-100")
+                            td(class="border p-4") 3
+                            td(class="border p-4") Алиева C.
+                            td(class="border p-4 text-green-500") 1359
+                        tr
+                            td(class="border p-4") 4
+                            td(class="border p-4") Абдукаримова А.
+                            td(class="border p-4 text-green-500") 1135
+                        tr
+                            td(class="border p-4") 5
+                            td(class="border p-4") Марков Д.
+                            td(class="border p-4 text-green-500") 1039
 
 
 
