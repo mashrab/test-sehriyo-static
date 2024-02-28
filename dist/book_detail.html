@@ -35,10 +35,10 @@
   </header>
     <div class="mx-auto my-4 lg:my-10 space-y-5 px-4 lg:px-10 max-w-7xl ">
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full ">
-          <div class="flex gap-10 flex-wrap">
-            <div class="w-56 shrink-0 space-y-4"><img class="rounded-2xl" src="content//book_cover.jpg" alt=""><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Скачать</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Читать онлайн</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Добавить отзыв</a>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="flex flex-col gap-4 lg:col-span-3"><img class="rounded-2xl" src="content//book_cover.jpg" alt=""><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Скачать</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Читать онлайн</a><a class="flex justify-center items-center gap-2 text-blue-800 text-center py-2 px-3 rounded-lg border border-blue-800 w-full" href="#">Добавить отзыв</a>
             </div>
-            <div class="space-y-5">
+            <div class="flex flex-col gap-4 lg:col-span-6">
               <h1 class="text-4xl">Богатый папа, бедный папа!</h1>
               <div>Роберт Кийосаки</div>
               <div class="inline-flex items-center justify-center rounded-full py-2 px-5 bg-yellow-100 gap-2">
@@ -46,7 +46,7 @@
                   <path d="M12 21.5791L11.8999 21.429C11.2053 20.3871 10.858 19.8661 10.3991 19.4889C9.99286 19.155 9.52476 18.9045 9.02161 18.7517C8.45325 18.5791 7.82711 18.5791 6.57482 18.5791H5.2C4.07989 18.5791 3.51984 18.5791 3.09202 18.3611C2.71569 18.1694 2.40973 17.8634 2.21799 17.4871C2 17.0593 2 16.4992 2 15.3791V6.7791C2 5.659 2 5.09894 2.21799 4.67112C2.40973 4.2948 2.71569 3.98884 3.09202 3.79709C3.51984 3.5791 4.07989 3.5791 5.2 3.5791H5.6C7.84021 3.5791 8.96031 3.5791 9.81596 4.01508C10.5686 4.39857 11.1805 5.01049 11.564 5.76314C12 6.61879 12 7.73889 12 9.9791M12 21.5791V9.9791M12 21.5791L12.1001 21.429C12.7947 20.3871 13.142 19.8661 13.6009 19.4889C14.0071 19.155 14.4752 18.9045 14.9784 18.7517C15.5467 18.5791 16.1729 18.5791 17.4252 18.5791H18.8C19.9201 18.5791 20.4802 18.5791 20.908 18.3611C21.2843 18.1694 21.5903 17.8634 21.782 17.4871C22 17.0593 22 16.4992 22 15.3791V6.7791C22 5.659 22 5.09894 21.782 4.67112C21.5903 4.2948 21.2843 3.98884 20.908 3.79709C20.4802 3.5791 19.9201 3.5791 18.8 3.5791H18.4C16.1598 3.5791 15.0397 3.5791 14.184 4.01508C13.4314 4.39857 12.8195 5.01049 12.436 5.76314C12 6.61879 12 7.73889 12 9.9791" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg><span>Читаете</span>
               </div>
-              <div class="flex gap-5">
+              <div class="flex gap-5 flex-wrap">
                 <div class="flex items-center gap-2">
                   <div class="bg-gray-100 rounded-full h-12 w-12 flex items-center justify-center shrink-0">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@
                   <div>2023—2024</div>
                 </div>
             </div>
-            <div class="w-56 shrink-0">
+            <div class="lg:col-span-3">
               <div class="border p-5 rounded-2xl bg-blue-50 border border-blue-100 text-center space-y-4">
                 <h3 class="font-semibold text-lg">Заработанные баллы</h3>
                 <div class="bg-emerald-500 rounded-full text-white h-28 w-28 flex items-center justify-center text-4xl font-semibold mx-auto">134</div>
@@ -132,7 +132,7 @@
         </div>
       <h3 class="font-semibold text-lg">Разделы книги</h3>
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full p-4">
-          <div class="flex items-start gap-4 justify-between">
+          <div class="flex items-start gap-4 justify-between flex-wrap">
             <div class="flex gap-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="40" height="40" rx="20" fill="#E5E7EB"/>
 <path d="M20 14V20L24 22M30 20C30 25.5228 25.5228 30 20 30C14.4772 30 10 25.5228 10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -181,7 +181,7 @@
           </div>
         </div>
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full p-4">
-          <div class="flex items-start gap-4 justify-between">
+          <div class="flex items-start gap-4 justify-between flex-wrap">
             <div class="flex gap-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="40" height="40" rx="20" fill="#FEF9C3"/>
 <path d="M20 29L19.8999 28.8499C19.2053 27.808 18.858 27.287 18.3991 26.9098C17.9929 26.5759 17.5248 26.3254 17.0216 26.1726C16.4533 26 15.8271 26 14.5748 26H13.2C12.0799 26 11.5198 26 11.092 25.782C10.7157 25.5903 10.4097 25.2843 10.218 24.908C10 24.4802 10 23.9201 10 22.8V14.2C10 13.0799 10 12.5198 10.218 12.092C10.4097 11.7157 10.7157 11.4097 11.092 11.218C11.5198 11 12.0799 11 13.2 11H13.6C15.8402 11 16.9603 11 17.816 11.436C18.5686 11.8195 19.1805 12.4314 19.564 13.184C20 14.0397 20 15.1598 20 17.4M20 29V17.4M20 29L20.1001 28.8499C20.7947 27.808 21.142 27.287 21.6009 26.9098C22.0071 26.5759 22.4752 26.3254 22.9784 26.1726C23.5467 26 24.1729 26 25.4252 26H26.8C27.9201 26 28.4802 26 28.908 25.782C29.2843 25.5903 29.5903 25.2843 29.782 24.908C30 24.4802 30 23.9201 30 22.8V14.2C30 13.0799 30 12.5198 29.782 12.092C29.5903 11.7157 29.2843 11.4097 28.908 11.218C28.4802 11 27.9201 11 26.8 11H26.4C24.1598 11 23.0397 11 22.184 11.436C21.4314 11.8195 20.8195 12.4314 20.436 13.184C20 14.0397 20 15.1598 20 17.4" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -233,7 +233,7 @@
           </div>
         </div>
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full p-4">
-          <div class="flex items-start gap-4 justify-between">
+          <div class="flex items-start gap-4 justify-between flex-wrap">
             <div class="flex gap-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="40" height="40" rx="20" fill="#FEF9C3"/>
 <path d="M20 29L19.8999 28.8499C19.2053 27.808 18.858 27.287 18.3991 26.9098C17.9929 26.5759 17.5248 26.3254 17.0216 26.1726C16.4533 26 15.8271 26 14.5748 26H13.2C12.0799 26 11.5198 26 11.092 25.782C10.7157 25.5903 10.4097 25.2843 10.218 24.908C10 24.4802 10 23.9201 10 22.8V14.2C10 13.0799 10 12.5198 10.218 12.092C10.4097 11.7157 10.7157 11.4097 11.092 11.218C11.5198 11 12.0799 11 13.2 11H13.6C15.8402 11 16.9603 11 17.816 11.436C18.5686 11.8195 19.1805 12.4314 19.564 13.184C20 14.0397 20 15.1598 20 17.4M20 29V17.4M20 29L20.1001 28.8499C20.7947 27.808 21.142 27.287 21.6009 26.9098C22.0071 26.5759 22.4752 26.3254 22.9784 26.1726C23.5467 26 24.1729 26 25.4252 26H26.8C27.9201 26 28.4802 26 28.908 25.782C29.2843 25.5903 29.5903 25.2843 29.782 24.908C30 24.4802 30 23.9201 30 22.8V14.2C30 13.0799 30 12.5198 29.782 12.092C29.5903 11.7157 29.2843 11.4097 28.908 11.218C28.4802 11 27.9201 11 26.8 11H26.4C24.1598 11 23.0397 11 22.184 11.436C21.4314 11.8195 20.8195 12.4314 20.436 13.184C20 14.0397 20 15.1598 20 17.4" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -285,7 +285,7 @@
           </div>
         </div>
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full p-4 !bg-emerald-100 border-emerald-300 border-1">
-          <div class="flex items-start gap-4 justify-between">
+          <div class="flex items-start gap-4 justify-between flex-wrap">
             <div class="flex gap-4"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="40" height="40" rx="20" fill="#10B981"/>
 <path d="M28 14L17 25L12 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -342,25 +342,25 @@
         </div>
         <div class="border p-6 lg:p-10 shadow-sm rounded-2xl bg-white space-y-5 mx-auto w-full undefined">
             <h3 class="font-semibold text-2xl ">Отзывы · 3</h3>
-          <div class="flex justify-between gap-10">
-            <div>Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?</div>
-            <div class="whitespace-nowrap text-right">
-              <div class="w-56">Сабина А.</div>
+          <div class="gap-4 grid lg:grid-cols-6">
+            <div class="lg:col-span-4">Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?</div>
+            <div class="lg:text-right lg:col-span-2">
+              <div>Сабина А.s</div>
               <div class="text-gray-400">20 ноября 2023</div>
               <div><a class="text-blue-800" href="">Удалить</a></div>
             </div>
           </div>
-          <div class="flex justify-between gap-10">
-            <div>У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.</div>
-            <div class="whitespace-nowrap text-right">
-              <div class="w-56">Константинопольский К.</div>
+          <div class="gap-4 grid lg:grid-cols-6">
+            <div class="lg:col-span-4">У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.</div>
+            <div class="lg:text-right lg:col-span-2">
+              <div>Константинопольский К.</div>
               <div class="text-gray-400">20 ноября 2023</div>
             </div>
           </div>
-          <div class="flex justify-between gap-10">
-            <div>Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.</div>
-            <div class="whitespace-nowrap text-right">
-              <div class="w-56">Азизов У.</div>
+          <div class="gap-4 grid lg:grid-cols-6">
+            <div class="lg:col-span-4">Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.</div>
+            <div class="lg:text-right lg:col-span-2">
+              <div>Азизов У.</div>
               <div class="text-gray-400">20 ноября 2023</div>
             </div>
           </div>

@@ -10,16 +10,16 @@ body(class="bg-gray-100 pb-20")
     +main('')
 
         +card('')
-            div(class="flex gap-10 flex-wrap")
+            div(class="grid grid-cols-1 lg:grid-cols-12 gap-6")
                 
-                div(class="w-56 shrink-0 space-y-4")
+                div(class="flex flex-col gap-4 lg:col-span-3")
                     img.rounded-2xl(src='content//book_cover.jpg' alt='')
 
                     +button-secondary('Скачать', 'w-full')
                     +button-secondary('Читать онлайн', 'w-full')
                     +button-secondary('Добавить отзыв', 'w-full')
                 
-                .space-y-5
+                div(class="flex flex-col gap-4 lg:col-span-6")
                         h1.text-4xl Богатый папа, бедный папа!
                         
                         div Роберт Кийосаки
@@ -29,7 +29,8 @@ body(class="bg-gray-100 pb-20")
                                 path(d='M12 21.5791L11.8999 21.429C11.2053 20.3871 10.858 19.8661 10.3991 19.4889C9.99286 19.155 9.52476 18.9045 9.02161 18.7517C8.45325 18.5791 7.82711 18.5791 6.57482 18.5791H5.2C4.07989 18.5791 3.51984 18.5791 3.09202 18.3611C2.71569 18.1694 2.40973 17.8634 2.21799 17.4871C2 17.0593 2 16.4992 2 15.3791V6.7791C2 5.659 2 5.09894 2.21799 4.67112C2.40973 4.2948 2.71569 3.98884 3.09202 3.79709C3.51984 3.5791 4.07989 3.5791 5.2 3.5791H5.6C7.84021 3.5791 8.96031 3.5791 9.81596 4.01508C10.5686 4.39857 11.1805 5.01049 11.564 5.76314C12 6.61879 12 7.73889 12 9.9791M12 21.5791V9.9791M12 21.5791L12.1001 21.429C12.7947 20.3871 13.142 19.8661 13.6009 19.4889C14.0071 19.155 14.4752 18.9045 14.9784 18.7517C15.5467 18.5791 16.1729 18.5791 17.4252 18.5791H18.8C19.9201 18.5791 20.4802 18.5791 20.908 18.3611C21.2843 18.1694 21.5903 17.8634 21.782 17.4871C22 17.0593 22 16.4992 22 15.3791V6.7791C22 5.659 22 5.09894 21.782 4.67112C21.5903 4.2948 21.2843 3.98884 20.908 3.79709C20.4802 3.5791 19.9201 3.5791 18.8 3.5791H18.4C16.1598 3.5791 15.0397 3.5791 14.184 4.01508C13.4314 4.39857 12.8195 5.01049 12.436 5.76314C12 6.61879 12 7.73889 12 9.9791' stroke='#111111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
                             span Читаете
 
-                        div(class="flex gap-5")
+                        
+                        div(class="flex gap-5 flex-wrap")
                             .flex.items-center.gap-2
                                 .bg-gray-100.rounded-full.h-12.w-12.flex.items-center.justify-center.shrink-0
                                     svg(width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -68,7 +69,7 @@ body(class="bg-gray-100 pb-20")
                         +description-list('Учебный год:', '2023—2024')
 
                 
-                div(class="w-56 shrink-0")
+                div(class="lg:col-span-3")
                     div(class="border p-5 rounded-2xl bg-blue-50 border border-blue-100 text-center space-y-4")
                         h3(class="font-semibold text-lg") Заработанные баллы
 
@@ -90,7 +91,7 @@ body(class="bg-gray-100 pb-20")
         h3(class="font-semibold text-lg") Разделы книги
         
         +card('p-4')
-            div(class="flex items-start gap-4 justify-between")
+            div(class="flex items-start gap-4 justify-between flex-wrap")
                 .flex.gap-4
                     +icon-clock
                     +description-list('Раздел книги', '«Урок, который преподал мне Роберт Фрост»')
@@ -108,7 +109,7 @@ body(class="bg-gray-100 pb-20")
                     +button-primary('Начать', 'w-full')
 
         +card('p-4')
-            div(class="flex items-start gap-4 justify-between")
+            div(class="flex items-start gap-4 justify-between flex-wrap")
                 .flex.gap-4
                     +icon-book
                     +description-list('Раздел книги', '«Урок, который преподал мне Роберт Фрост»')
@@ -128,7 +129,7 @@ body(class="bg-gray-100 pb-20")
                     +progress-bar
 
         +card('p-4')
-            div(class="flex items-start gap-4 justify-between")
+            div(class="flex items-start gap-4 justify-between flex-wrap")
                 .flex.gap-4
                     +icon-book
                     +description-list('Раздел книги', '«Урок, который преподал мне Роберт Фрост»')
@@ -148,7 +149,7 @@ body(class="bg-gray-100 pb-20")
                     +progress-bar
 
         +card('p-4 !bg-emerald-100 border-emerald-300 border-1')
-            div(class="flex items-start gap-4 justify-between")
+            div(class="flex items-start gap-4 justify-between flex-wrap")
                 .flex.gap-4
                     +icon-success-lg
                     +description-list('Раздел книги', '«Урок, который преподал мне Роберт Фрост»')
@@ -180,25 +181,24 @@ body(class="bg-gray-100 pb-20")
             +h3('Отзывы · 3')
 
             
-            div.flex.justify-between.gap-10
-                
-                div Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
-                div(class="whitespace-nowrap text-right")
-                    div(class="w-56") Сабина А.
+            div(class="gap-4 grid lg:grid-cols-6")
+                div(class="lg:col-span-4") Мне было бы интересно видеть на вашем сайте больше книг о саморазвитии. Можете рассмотреть добавление "Сила привычки" Чарльза Дюхигга?
+                div(class="lg:text-right lg:col-span-2")
+                    div Сабина А.s
                     div.text-gray-400 20 ноября 2023
                     div
                         a(href="", class="text-blue-800") Удалить
 
-            div.flex.justify-between.gap-10
-                div У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
-                div(class="whitespace-nowrap text-right")
-                    div(class="w-56") Константинопольский К.
+            div(class="gap-4 grid lg:grid-cols-6")
+                div(class="lg:col-span-4") У меня есть отличная рекомендация для вашей библиотеки. Пожалуйста, добавьте "Мастер и Маргарита" Михаила Булгакова, один из самых известных романов в русской литературе.
+                div(class="lg:text-right lg:col-span-2")
+                    div Константинопольский К.
                     div.text-gray-400 20 ноября 2023
 
-            div.flex.justify-between.gap-10
-                div Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
-                div(class="whitespace-nowrap text-right")
-                    div(class="w-56") Азизов У.
+            div(class="gap-4 grid lg:grid-cols-6")
+                div(class="lg:col-span-4") Я бы предложил включить в раздел научной фантастики книгу "Страх и ненависть в Лас-Вегасе" Хантера Томпсона. Это культовая книга, которая поражает своей оригинальностью.
+                div(class="lg:text-right lg:col-span-2")
+                    div Азизов У.
                     div.text-gray-400 20 ноября 2023
 
             
